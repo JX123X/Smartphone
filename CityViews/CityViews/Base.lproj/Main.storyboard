@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CityViews" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleAspectFit" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Seattle" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FJ2-vL-Zb3" userLabel="Image">
+                                <rect key="frame" x="5" y="481" width="383" height="234"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="234" id="heX-EM-gDk"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleAspectFit" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FNW-D0-TEC">
+                                <rect key="frame" x="5" y="230" width="383" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="7gV-pf-Qeb"/>
+                                    <constraint firstAttribute="height" constant="40" id="DaR-4w-f08"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Austin"/>
+                                <connections>
+                                    <action selector="ATView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bwJ-9M-aax"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x7u-QM-pac">
+                                <rect key="frame" x="5" y="278" width="383" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="ts1-g5-AiX"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="yvH-32-F5e"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="New york"/>
+                                <connections>
+                                    <action selector="NYView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Raz-At-v5Q"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n7F-dd-uvf">
+                                <rect key="frame" x="5" y="326" width="383" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="Cue-Tx-uZZ"/>
+                                    <constraint firstAttribute="height" constant="40" id="MWX-0b-5Fe"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Las vegas"/>
+                                <connections>
+                                    <action selector="LAView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="D4s-Fz-MuY"/>
+                                    <action selector="LVView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="X5g-5f-gYV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L4u-5T-dgN">
+                                <rect key="frame" x="5" y="182" width="383" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="IDN-A3-BLn"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="nCN-XO-igG"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Seattle"/>
+                                <connections>
+                                    <action selector="ChangeLabelAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mXL-Z0-mLZ"/>
+                                    <action selector="changeLabelAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CCP-92-KxX"/>
+                                    <action selector="seattleView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6f6-SW-E23"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Efq-hF-UWT">
+                                <rect key="frame" x="5" y="374" width="383" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="ab4-Up-aea"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="gKw-68-1Wd"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Los angles"/>
+                                <connections>
+                                    <action selector="LAView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cta-4d-HJd"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Image Views" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ObE-Ku-1QG">
+                                <rect key="frame" x="120" y="115" width="153" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="FNW-D0-TEC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="5" id="1c4-BI-L0W"/>
+                            <constraint firstItem="x7u-QM-pac" firstAttribute="top" secondItem="FNW-D0-TEC" secondAttribute="bottom" constant="70" id="1qu-vR-i7v"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="L4u-5T-dgN" secondAttribute="trailing" constant="5" id="3eh-Pw-jLR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FNW-D0-TEC" secondAttribute="trailing" constant="5" id="4x7-xE-ivF"/>
+                            <constraint firstItem="L4u-5T-dgN" firstAttribute="top" secondItem="ObE-Ku-1QG" secondAttribute="bottom" constant="5" id="5L9-AA-DVK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="x7u-QM-pac" secondAttribute="trailing" constant="5" id="70s-gx-kC4"/>
+                            <constraint firstItem="Efq-hF-UWT" firstAttribute="top" secondItem="n7F-dd-uvf" secondAttribute="bottom" constant="70" id="Axp-6t-LkU"/>
+                            <constraint firstItem="n7F-dd-uvf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="5" id="BAD-kO-mEc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Efq-hF-UWT" secondAttribute="trailing" constant="5" id="BbB-NS-qhv"/>
+                            <constraint firstItem="FNW-D0-TEC" firstAttribute="top" secondItem="L4u-5T-dgN" secondAttribute="bottom" constant="5" id="C7u-Xc-pVF"/>
+                            <constraint firstItem="x7u-QM-pac" firstAttribute="top" secondItem="FNW-D0-TEC" secondAttribute="bottom" constant="5" id="JbO-J4-d4L"/>
+                            <constraint firstItem="x7u-QM-pac" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="5" id="NJc-H7-TV9"/>
+                            <constraint firstItem="FJ2-vL-Zb3" firstAttribute="top" secondItem="Efq-hF-UWT" secondAttribute="bottom" constant="70" id="Qll-uE-mRt"/>
+                            <constraint firstItem="Efq-hF-UWT" firstAttribute="top" secondItem="n7F-dd-uvf" secondAttribute="bottom" constant="5" id="W1B-EF-o6e"/>
+                            <constraint firstItem="FNW-D0-TEC" firstAttribute="top" secondItem="L4u-5T-dgN" secondAttribute="bottom" constant="70" id="ZDc-j8-nr2"/>
+                            <constraint firstItem="Efq-hF-UWT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="5" id="ct1-vB-fcL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="n7F-dd-uvf" secondAttribute="trailing" constant="5" id="diS-eH-NzP"/>
+                            <constraint firstItem="n7F-dd-uvf" firstAttribute="top" secondItem="x7u-QM-pac" secondAttribute="bottom" constant="70" id="tId-oi-PeW"/>
+                            <constraint firstItem="n7F-dd-uvf" firstAttribute="top" secondItem="x7u-QM-pac" secondAttribute="bottom" constant="5" id="u6p-rd-Ip2"/>
+                            <constraint firstItem="L4u-5T-dgN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="5" id="vD3-Du-ExV"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ImageView" destination="FJ2-vL-Zb3" id="AZm-HO-OGs"/>
+                        <outlet property="imageView" destination="FJ2-vL-Zb3" id="GSq-8w-A4n"/>
+                        <outlet property="lblImageViews" destination="ObE-Ku-1QG" id="zyI-fU-5M2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="20.610687022900763" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Seattle" width="853.33331298828125" height="533.33331298828125"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

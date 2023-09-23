@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "City_of_Las_Vegas_skyline.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "City_of_Las_Vegas_skyline@2x.jpg",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "City_of_Las_Vegas_skyline@3x.jpg",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
