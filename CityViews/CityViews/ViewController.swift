@@ -9,42 +9,36 @@ import UIKit
 
 class ViewController: UIViewController {
 
-
-    @IBOutlet weak var imageView: UIImageView!
     
+    @IBOutlet weak var lblCityViews: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        imageView.image = UIImage (named: "Seattle")
-        imageView.image = UIImage (named: "AT")
-        imageView.image = UIImage (named: "NY")
-        imageView.image = UIImage (named: "LV")
-        imageView.image = UIImage (named: "LA")
-        
-        
+        lblCityViews.image=UIImage(named: "Seattle_Center_as_night_falls")
     }
 
-    @IBAction func seattleView(_ sender: Any) {
-        imageView.image = UIImage(named: "Seattle")
+    @IBAction func SeattleView(_ sender: Any) {
+        lblCityViews.image=UIImage(named: "Seattle_Center_as_night_falls")
     }
     
+    @IBAction func LAView(_ sender: Any) {
+        lblCityViews.image=UIImage(named:"LV")
+    }
+    
+    
     @IBAction func ATView(_ sender: Any) {
-        imageView.image = UIImage(named: "AT")
+        lblCityViews.image=UIImage(named:"AT")
+    }
+    
+    
+    @IBAction func LVView(_ sender: Any) {
+        lblCityViews.image=UIImage(named:"LV")
     }
     
     
     @IBAction func NYView(_ sender: Any) {
-        imageView.image = UIImage(named: "NY")
+        lblCityViews.image=UIImage(named:"NY")
     }
     
-
-    @IBAction func LVView(_ sender: Any) {
-        imageView.image = UIImage(named: "LV")
-    }
-    
-    @IBAction func LAView(_ sender: Any) {
-        imageView.image = UIImage(named: "LA")
-    }
     
 }
 
