@@ -13,9 +13,8 @@
 		1763D8032ACBC5170081DB0B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1763D8012ACBC5170081DB0B /* Main.storyboard */; };
 		1763D8052ACBC5180081DB0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1763D8042ACBC5180081DB0B /* Assets.xcassets */; };
 		1763D8082ACBC5180081DB0B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1763D8062ACBC5180081DB0B /* LaunchScreen.storyboard */; };
-		1787E2EF2AD09FBF00099512 /* FoodItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1787E2EE2AD09FBF00099512 /* FoodItemCell.xib */; };
-		1787E2F52AD0A53100099512 /* FoodItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1787E2F42AD0A53100099512 /* FoodItemCell.swift */; };
-		1787E2F72AD0A58800099512 /* FoodItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1787E2F62AD0A58800099512 /* FoodItem.swift */; };
+		17D454D52AD4C081001A1D4C /* FoodItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D454D32AD4C081001A1D4C /* FoodItemCell.swift */; };
+		17D454D62AD4C081001A1D4C /* FoodItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17D454D42AD4C081001A1D4C /* FoodItemCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,9 +26,8 @@
 		1763D8042ACBC5180081DB0B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1763D8072ACBC5180081DB0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1763D8092ACBC5180081DB0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1787E2EE2AD09FBF00099512 /* FoodItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FoodItemCell.xib; sourceTree = "<group>"; };
-		1787E2F42AD0A53100099512 /* FoodItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodItemCell.swift; sourceTree = "<group>"; };
-		1787E2F62AD0A58800099512 /* FoodItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodItem.swift; sourceTree = "<group>"; };
+		17D454D32AD4C081001A1D4C /* FoodItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodItemCell.swift; sourceTree = "<group>"; };
+		17D454D42AD4C081001A1D4C /* FoodItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FoodItemCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,9 +67,8 @@
 				1763D8042ACBC5180081DB0B /* Assets.xcassets */,
 				1763D8062ACBC5180081DB0B /* LaunchScreen.storyboard */,
 				1763D8092ACBC5180081DB0B /* Info.plist */,
-				1787E2EE2AD09FBF00099512 /* FoodItemCell.xib */,
-				1787E2F42AD0A53100099512 /* FoodItemCell.swift */,
-				1787E2F62AD0A58800099512 /* FoodItem.swift */,
+				17D454D32AD4C081001A1D4C /* FoodItemCell.swift */,
+				17D454D42AD4C081001A1D4C /* FoodItemCell.xib */,
 			);
 			path = Foods;
 			sourceTree = "<group>";
@@ -134,7 +131,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1787E2EF2AD09FBF00099512 /* FoodItemCell.xib in Resources */,
+				17D454D62AD4C081001A1D4C /* FoodItemCell.xib in Resources */,
 				1763D8082ACBC5180081DB0B /* LaunchScreen.storyboard in Resources */,
 				1763D8052ACBC5180081DB0B /* Assets.xcassets in Resources */,
 				1763D8032ACBC5170081DB0B /* Main.storyboard in Resources */,
@@ -148,11 +145,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1787E2F52AD0A53100099512 /* FoodItemCell.swift in Sources */,
+				17D454D52AD4C081001A1D4C /* FoodItemCell.swift in Sources */,
 				1763D8002ACBC5170081DB0B /* ViewController.swift in Sources */,
 				1763D7FC2ACBC5170081DB0B /* AppDelegate.swift in Sources */,
 				1763D7FE2ACBC5170081DB0B /* SceneDelegate.swift in Sources */,
-				1787E2F72AD0A58800099512 /* FoodItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

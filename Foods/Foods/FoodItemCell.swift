@@ -8,13 +8,19 @@
 import UIKit
 
 class FoodItemCell: UITableViewCell {
+
+    @IBOutlet weak var imgView: UIImageView!
+    @IBOutlet weak var lblImage: UILabel!
     
-    @IBOutlet weak var foodImageView: UIImageView!
-    @IBOutlet weak var foodNameLabel: UILabel!
-
-    func configureCell(with foodItem: FoodItem) {
-        foodImageView.image = UIImage(named: foodItem.imageName)
-        foodNameLabel.text = foodItem.name
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        // Initialization code
     }
-}
 
+    override func setSelected(_ selected: Bool, animated: Bool) {
+        super.setSelected(selected, animated: animated)
+
+        // Configure the view for the selected state
+    }
+    
+}

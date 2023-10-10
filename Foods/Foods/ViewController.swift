@@ -7,39 +7,27 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-    
-    @IBOutlet weak var tableView: UITableView!
-    
-    let foodItems = [
-        FoodItem(name: "pizza", imageName: "pizza"),
-        FoodItem(name: "hamburger", imageName: "hamburger"),
-        FoodItem(name: "taco", imageName: "taco"),
-        // Add more food items here
-    ]
-    
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+
+    let imageNames = ["Hamburger","Pizza","Taco",]
+
+    @IBOutlet weak var tblView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        tableView.dataSource = self
-        tableView.delegate = self
-        
-        // Register the XIB for the table view cell
-        let nib = UINib(nibName: "FoodItemCell", bundle: nil)
-        tableView.register(nib, forCellReuseIdentifier: "FoodItemCell")
+        // Do any additional setup after loading the view.
     }
-    
-    // MARK: - Table view data source methods
-    
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return foodItems.count
+        return imageNames.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "FoodItemCell", for: indexPath) as! FoodItemCell
-        cell.configureCell(with: foodItems[indexPath.row])
+        let cell = Bundle.main.loadNibNamed("FoodItemCell", owner: self)?.first as! FoodItemCell
+        
+        cell.imgView?.image = UIImage(named: imageNames[indexPath.row])
+        cell.lblImage.text = imageNames[indexPath.row]
+        
         return cell
     }
 }
-
 
