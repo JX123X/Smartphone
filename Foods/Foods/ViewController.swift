@@ -9,7 +9,7 @@ import UIKit
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
-    let imageNames = ["Hamburger","Pizza","Taco",]
+    let imageNames = ["hamburger","pizza","taco",]
 
     @IBOutlet weak var tblView: UITableView!
     override func viewDidLoad() {
